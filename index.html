@@ -45,6 +45,8 @@
 	   .portimages:hover{
 		   opacity:0.6;
 	   }
+	   
+
 
 
 		</style>
@@ -103,15 +105,19 @@
 		
 		
 		<div id="wrapper2">
-			<section class="module parallax parallax-1">
-				</section>
+				
+				<section class="module parallax parallax-1 visible-md visible-lg">
+			</section>
+			
+
 			<a name="about"></a>
 					
-			<nav class="nav-wrap">
+			<nav class="nav-wrap ">
 			  <!-- mini-nav: Nav bar used under 660px. -->
 			  <div class="mini-nav">
 			    <span class="menu-icon">&#9776</span>
 			  </div>
+			  
 			  
 			  <!-- mini-nav END -->
 			  <!--nav-items: Nav used over 660px -->
@@ -291,15 +297,31 @@
 
        <script>
    
-       $(window).scroll(function(){
-			    var fromTopPx = 800; // distance to trigger
-			    var scrolledFromtop = jQuery(window).scrollTop();
-			    if(scrolledFromtop > fromTopPx){
-			        jQuery('body').addClass('scrolled');
-			    }else{
-			        jQuery('body').removeClass('scrolled');
-			    }
-			});
+       if($(window).width() >= 420){ 
+	       $(window).scroll(function(){
+				    var fromTopPx = 800; // distance to trigger
+				    var scrolledFromtop = jQuery(window).scrollTop();
+				    if(scrolledFromtop > fromTopPx){
+				        jQuery('body').addClass('scrolled');
+				    }else{
+				        jQuery('body').removeClass('scrolled');
+				    }
+				});
+			
+	
+       }else{
+	        $(window).scroll(function(){
+				    var fromTopPx = 0; // distance to trigger
+				    var scrolledFromtop = jQuery(window).scrollTop();
+				    if(scrolledFromtop > fromTopPx){
+				        jQuery('body').addClass('scrolled');
+				    }else{
+				        jQuery('body').removeClass('scrolled');
+				    }
+				});
+
+       }
+
 			
 
        
