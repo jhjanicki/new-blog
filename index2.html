@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="main2.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+         <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+        <style>
+        
+       .projectwrapper{
+	       width:80%;
+	       margin-left: 10%;
+	       margin-right: 10%;
+       }
+       
+       a:hover{
+	       color:black;
+		   transition-duration: 1s;
+		   transition-timing-function: ease;
+		   transition-delay: .3s;
+
+       }
+       
+       .week li{
+	       display: block;
+	       text-align: center;
+	       margin-left: -3%;
+	       font-size: 18px;
+
+       }
+       
+       .row{
+	       margin-bottom: 30px;
+       }
+		
+	   .portimages{
+		   transition-property:opacity;
+		   transition-duration: 0.6s;
+		   transition-timing-function: ease;
+	   }
+	   
+	   .portimages:hover{
+		   opacity:0.6;
+	   }
+
+
+		</style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+      <script type="text/javascript" src="smooth.pack.js"></script>
+      <script src="http://ui.jquery.com/latest/ui/effects.core.js"></script>
+      <script src="jq-sticky-anything.min.js"></script>
+       <script type="text/javascript" src="jquery.sticky.js"></script>
+       
+      <script type="text/javascript">
+	    	$(document).ready(function(){
+				$(".menu-icon").on('click',function(){
+					$('.nav-items').toggle({display:"block"});
+					
+				});
+				
+		/*
+		 $('#img1').hover(function () {
+			        this.src = 'imag1.png';
+			    }, function () {
+			        this.src = 'ima1.png';
+			    }
+			   
+			    
+			    );
+			    
+			    $('#img2').hover(function () {
+			        this.src = 'imag2.png';
+			    }, function () {
+			        this.src = 'ima2.png';
+			    });
+			
+*/
+				
+			});
+			
+			
+			
+			
+			
+			
+	</script>
+      
+    </head>
+    <body >
+    
+    <a name="home"></a>
+			 			
+		
+			<div id="wrapper">
+		
+				<section id="firstsection">
+					<img src="mainlogo.png">
+					<img src="julia.png">
+				</section>
+		
+		
+		<div id="wrapper2">
+			<section class="module parallax parallax-1">
+				</section>
+			<a name="about"></a>
+					
+			<nav class="nav-wrap">
+			  <!-- mini-nav: Nav bar used under 660px. -->
+			  <div class="mini-nav">
+			    <span class="menu-icon">&#9776</span>
+			  </div>
+			  
+			  <!-- mini-nav END -->
+			  <!--nav-items: Nav used over 660px -->
+			  <ul class="nav-items">
+			   
+			    <li class="item" id="about"><a href="#about">About</a></li>
+			    <li class="item"><a href="#projects">Projects</a></li>
+			    <li class="item" id="logo"><!-- <h1> &#9874</h1> --><img src="logo5.png" onmouseover="this.src='logo8.png'" onmouseout="this.src='logo5.png'" width="40" height="40"></li>
+			    <li class="item"><a href="#contact">Contact</a></li>
+			    <li class="item"><a href="#map">Map</a></li>
+			  </ul>
+			  <!-- nav-items END -->
+			</nav>  
+
+		<div class="container-fluid">
+		<a name="about"></a>
+			<section class="module content" id="content1">
+			
+							<h2>About</h2>
+							<p>
+							Gray Area Fall Immersive
+							</p>
+							
+
+		
+			</section>
+		</div>				
+						
+				<a name="projects"></a>
+				
+				
+ <div class="container-fluid">
+	 <section class="module content">
+			
+		<h2>Projects</h2>
+		<div class="projectwrapper">
+			<div class="row">
+		            <div class="col-md-4 portfolio-item">
+		                <a href="#week1">
+		                    <img class="center-block img-rounded img-responsive portimages" id="img1" src="i1.png" alt="">
+		                </a>
+		                <h3 class="text-center">
+		                    <a href="#week1">Week 1</a>
+		                </h3>
+		                <p class="text-center" id="title1">HTML/CSS</p>                
+		            </div>
+		            <div class="col-md-4 portfolio-item">
+		                <a href="#week2">
+		                    <img class="center-block img-rounded img-responsive portimages" id="img2" src="i2.png" alt="">
+		                </a>
+		                <h3 class="text-center">
+		                    <a href="#week2">Week 2</a>
+		                </h3>
+		                <p class="text-center" id="title2">Processing</p>
+		            </div>
+		            <div class="col-md-4 portfolio-item">
+		                <a href="#week3">
+		                    <img class="center-block img-rounded img-responsive portimages" src="i3.png" alt="">
+		                </a>
+		                <h3 class="text-center">
+		                    <a href="#week3">Week 3</a>
+		                </h3>
+		                <p class="text-center" id="title3">Javascript</p>
+		            </div>
+		        </div><!-- end row -->
+		        <div class="row">
+		            <div class="col-md-4 portfolio-item">
+		                <a href="#week4">
+		                    <img class="center-block img-rounded img-responsive" src="i2.png" alt="">
+		                </a>
+		                <h3 class="text-center">
+		                    <a href="#week4">Week 4</a>
+		                </h3>
+		                <p class="text-center" id="title1">Node.js</p>                
+		            </div>
+		            <div class="col-md-4 portfolio-item">
+		                <a href="#">
+		                    <img class="center-block img-rounded img-responsive" src="i1.png" alt="">
+		                </a>
+		                <h3 class="text-center">
+		                    <a href="#">Week 5</a>
+		                </h3>
+		                <p class="text-center" id="title2">Arduino</p>
+		            </div>
+		            <div class="col-md-4 portfolio-item">
+		                <a href="#">
+		                    <img class="center-block img-rounded img-responsive" src="i3.png" alt="">
+		                </a>
+		                <h3 class="text-center">
+		                    <a href="#">Week 6</a>
+		                </h3>
+		                <p class="text-center" id="title3">Interactive Audio</p>
+		            </div>
+		        </div><!-- end row -->
+		     </div> <!-- end projectwrapper -->
+
+  </section> <!-- end module content -->
+  </div> <!-- end container fluid -->
+
+
+ <section class="module content weeks">				
+	 				<a name="week1"></a>
+					<h2> Week 1</h2>
+					<ul class="week">
+					    <li> HTML </li>
+					    <li> CSS </li>
+						<li> Responsive Web Design </li>
+						<li> Bootstrap </li>
+						<li> Semantic UI </li>
+					</ul> 
+					
+					<a name="week2"></a>
+					<h2> Week 2</h2>
+					<ul class="week">
+						<li> Processing </li>
+					
+					</ul> 
+					
+					<a name="week3"></a>
+					<h2> Week 3</h2>
+					<ul class="week">
+						<li> Javascript </li>
+						<li> P5.js </li>
+					</ul> 
+					
+					<a name="week4"></a>
+					<h2> Week 4</h2>
+					<ul class="week">
+						<li> Node.js </li>
+						<li> express.js </li>
+						<li> socket.io </li>
+					</ul> 
+					<br>
+					<br>
+					<h2> To be continued...</h2>
+
+
+  </section>
+
+
+	
+<section class="module parallax parallax-2 visible-md visible-lg">
+        <div class="container">
+        <!-- <h1>text</h1> -->
+        </div>
+  </section>
+      <a name="contact"></a>
+			<section>
+				<h2>Contact</h2>
+				<p> jhjanicki@gmail.com </p>
+				<p>
+
+				</p>
+		</section>
+		
+
+		<section id="lastsection">
+			<p>
+
+		</section>
+		</div> <!-- end wrapper2 -->
+	</div> <!-- end wrapper -->
+		<footer>
+		 <ul class="nav-items">
+			    <li class="item"><a href="#">Facebook</a></li>
+			    <li class="item"><a href="#">Twitter</a></li>
+			    <li class="item"><a href="#">LinkedIn</a></li>
+			  
+			  </ul>
+		
+		</footer>
+		
+		
+		<div id="map"></div>	 	
+
+	   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>	     
+
+       <script>
+   
+       $(window).scroll(function(){
+			    var fromTopPx = 800; // distance to trigger
+			    var scrolledFromtop = jQuery(window).scrollTop();
+			    if(scrolledFromtop > fromTopPx){
+			        jQuery('body').addClass('scrolled');
+			    }else{
+			        jQuery('body').removeClass('scrolled');
+			    }
+			});
+			
+
+       
+ 
+		
+		
+/*
+	
+		 $(window).scroll(
+			{
+		        previousTop: 0
+		    },
+		    function () {
+		    var currentTop = $(window).scrollTop();
+		   
+			    
+		    if (currentTop<800) {
+		        
+		        $("body").addClass("body1",1000);
+		       
+		    } else {
+		    
+		    	$("body").removeClass("body1", 1000);
+		    	
+		    	 
+		    }
+
+		   this.previousTop = currentTop;
+
+	   
+		});
+*/
+
+
+      $(function(){
+       
+       
+		/*
+		  $('.menu-icon').click(function(){
+				      $('.nav-items').toggleClass('mini-menu-items');
+				  }); 
+	    */
+	  
+		  
+		if($(window).width() >= 420){   
+		  $('nav').stickThis();
+		  
+		};
+
+		  
+		});
+		
+		
+		
+		
+	var map = L.map('map').setView([37.77364479805725, -122.4177575111389], 15);
+				
+				L.tileLayer('http://{s}.tiles.mapbox.com/v3/jhjanicki.jmla817h/{z}/{x}/{y}.png', {
+			    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+			    maxZoom: 20
+			}).addTo(map);
+			
+			map.scrollWheelZoom.disable();
+
+			
+			var artIcon = L.icon({
+			    iconUrl: 'logo1.png',
+			    iconAnchor:   [25, 30], // point of the icon which will correspond to marker's location
+			          
+			});
+			
+			var marker = L.marker([37.77364479805725, -122.4177575111389],{icon: artIcon}).addTo(map).bindPopup("Gray Area <br> 2665 Mission st.<br>San Francisco");
+       </script>
+       <a name="map"></a>
+    </body>
+</html>

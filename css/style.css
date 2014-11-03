@@ -1,0 +1,726 @@
+html,body{
+	overflow-x: hidden;
+	width:100%;
+}
+
+/* ============================================================
+  SECTIONS
+============================================================ */
+
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+
+section.module.content {
+  padding: 20px;
+  padding-bottom:30px;
+  background-color: white;
+}
+
+section.module.parallax {
+  height: 500px;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+}
+
+section.module.parallax-1 {
+  background-image: url("../images/main.png");
+  background-size: 100%; 
+  overflow-x: hidden;
+  width: 100%;
+ 
+}
+
+section.module.parallax-2 {
+  background-image: url("../images/main.png");
+  background-size: 100%; 
+}
+
+
+section.module.parallax-2:hover{
+	background-image: url("../images/main.png");
+	background-size: 100%;
+}
+
+
+section.module.parallax-3 {
+	  background-image: url("../images/main.png");
+	  background-size: 100%; 
+}
+
+section.module.parallax-3:hover {
+	  background-image: url("../images/main.png");
+	  background-size: 100%;
+}
+
+/* text styling */
+
+section.module.parallax h1 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 40px;
+  line-height: 400px;
+  font-size: 70px;
+  font-weight: 200;
+  text-align: center; 
+  font-family: 'Chalet-ParisNineteenSixty';
+}
+
+section.module.parallax p {
+  color: white;
+  line-height: 500px;
+  font-size: 30px;
+  font-weight: 40;
+  text-align: center; 
+  font-family: 'Chalet-ParisNineteenSixty';
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+ 
+}
+
+section.module h2 {
+  font-family:'Chalet-ParisNineteenSixty';
+  font-size: 40px;
+  text-align: center;
+}
+
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+/* ============================================================
+navbar
+============================================================ */
+
+    	.fixed-wrapper {
+		  position: fixed;
+		  top: 0;
+		  z-index: 3;
+		 }
+		
+		
+		.info-bar {
+		  padding: 8px 0;
+		  background-color: #ffffff;
+		   position: fixed;
+		   top: 0px;
+		   height:80px;
+		   width:100%;
+		   opacity: 1;
+		   transition-property:height, opacity;
+		   transition-duration: 1s;
+		   transition-timing-function: ease;
+		   transition-delay: .6s;
+		   z-index: 2;
+		   
+		}
+		
+		.info-bar ul{
+			margin-left: 80px;
+		}
+		
+		.info-bar li{
+			display: inline;
+		}
+		
+		.info-bar a{
+			display: inline;
+			padding-right: 30px;
+			text-align: center;
+			line-height: 40px;
+			font-size: 25px;
+			font-family: 'Chalet-ParisNineteenSixty';
+			line-height: 70px;
+			color:gray;
+			float: right;
+			
+		}
+		
+		/* id for nav li */
+		#artillery{
+			font-size: 40px;
+			float: left;
+			margin-right: 200px;
+		}
+		
+		/* id for nav li */
+		#contact{
+			float:right;
+			margin-right: 0;
+		}
+		
+		/* id for nav li for small screens */
+		#mininav li{
+			width: 100%;
+			text-align: center;
+			font-size: 20px;
+			border: 1px solid #d1cdcd;
+			font-family: 'Chalet-ParisNineteenSixty';
+		}
+		#mininav li a{
+			text-decoration: none;
+			color:gray;
+			-webkit-transition: all 1s ease;
+			-moz-transition: all 1s ease;
+			-ms-transition: all 1s ease;
+			transition: all 1s ease;
+
+		}
+		
+		#mininav li a:hover{
+			color: green;
+		}
+		
+		#mininav{
+			display: none;
+		}
+		
+		/* icon for small screens */
+		button{
+		  margin:10px;
+		  width:40px;
+		  height:34px;
+		  padding-top:3px;
+		  border-radius:5px;
+		  border:2px solid #ccc;
+		  background:none;
+		  outline:none;
+		  cursor:pointer;
+		  margin-bottom:15px;
+		  -webkit-transition: all 1s ease;
+		  -moz-transition: all 1s ease;
+	      -ms-transition: all 1s ease;
+		  transition: all 1s ease;
+		}
+		button:hover{
+		  background:#f3f3f3;
+		}
+		span{
+		  width:25px;
+		  height:4px;
+		  background:#ccc;
+		  display: block;
+		  margin:auto;
+		  border-radius:3px;
+		  margin-bottom:3px; 
+		}
+		
+		/* id for mini */
+		 #navbutton{
+		    border: 1px;
+		    position: absolute;
+		    top:5px;
+		    left: 5px;
+		    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+		    cursor:pointer;
+	    }
+
+		
+/* ============================================================
+  footer
+============================================================ */		
+		footer{
+		    bottom: 0px;
+			width:100%;
+			padding: 0;
+			margin-top: 20px;
+			margin:0; 
+			transition:all .2s linear; 
+			-o-transition:all .2s linear; 
+			-moz-transition:all .2s linear; 
+			-webkit-transition:all .2s linear;
+		    color:black;
+		    font-size: 20px;
+		    text-align: center;
+		    font-family: 'Chalet-ParisNineteenSixty';
+		    
+	    }
+	    
+	    footer li{
+		    display: inline-block;
+	    }
+	    
+	    footer li a:hover{
+		   opacity: 0.5;
+		   transition-property:height, opacity;
+		   transition-duration: 1s;
+		   transition-timing-function: ease;
+	    }
+	    
+	    #copy{
+		    padding: 10px;
+	    }
+
+/* ============================================================
+  button
+============================================================ */
+ .button{
+    	font-family: Antenna,Helvetica,sans-serif;
+		display: inline-block;
+		text-align: center;
+		padding: 18px 30px;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 10px;
+		line-height: 1;
+		text-transform: uppercase;
+		position: relative;
+		height: 50px;
+		min-width: 185px;
+		background: none;
+		color: #111;
+		border: 2px solid #111;
+		-webkit-transition: all 500ms ease;
+		-moz-transition: all 500ms ease;
+		-ms-transition: all 500ms ease;
+		transition: all 500ms ease;
+	 }
+	 
+	 
+
+	 .button:hover{
+		 text-decoration: none;
+      }
+      
+
+/* ============================================================
+  images, grids
+============================================================ */
+
+.grid {
+    padding: 20px 20px 100px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+}
+ 
+.grid li {
+    display: inline-block;
+    width: 300px;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+}
+
+.grid figure {
+    margin: 0;
+    position: relative;
+}
+
+.grid figure img {
+    max-width: 100%;
+    display: block;
+    position: relative;
+  
+}
+
+.grid figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    color: #ffffff;
+    font-family: 'Chalet-ParisNineteenSixty';
+}
+
+.grid .figcaption2 {
+	background: black;	
+}
+
+.grid figcaption#figone{
+	background: #547fb2;
+	opacity: 0.8;
+}
+.grid figcaption#figtwo{
+	background: #569169;
+	opacity: 0.8;
+}
+.grid figcaption#figthree{
+	background: #ffc619;
+	opacity: 0.8;
+}
+
+.grid figcaption h3 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 20px;
+    text-align: left;
+}
+
+.grid figcaption .more {
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 2px;
+    display: inline-block;
+    background: black;
+    color: #fff;
+    float:right;
+}
+
+.grid figcaption .more1 {
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 2px;
+    display: inline-block;
+    background: #547fb2;
+    color: #fff;
+    float:right;
+}
+
+.grid figcaption .more2 {
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 2px;
+    display: inline-block;
+    background: #569169;
+    color: #fff;
+    float:right;
+}
+
+
+.grid figcaption .more3 {
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 2px;
+    display: inline-block;
+    background: #ffc619;
+    color: #fff;
+    float:right;
+}
+
+
+.grid figcaption .more:hover {
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 2px;
+    display: inline-block;
+    background: #979797;
+    color: #fff;
+}
+
+.grid figcaption .more1:hover {
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 2px;
+    display: inline-block;
+    background: #979797;
+    color:black;
+}
+
+.grid figcaption .more2:hover {
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 2px;
+    display: inline-block;
+    background: #979797;
+    color:black;
+}
+
+.grid figcaption .more3:hover {
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 2px;
+    display: inline-block;
+    background: #979797;
+    color:black;
+}
+
+
+#figcap1,#figcap2,#figcap3,#figcap4,#figcap5,#figcap6,#figcap7,#figcap8,#figcap9
+    	{
+	       opacity: 0;
+	       -webkit-transition: all 1s ease;
+			-moz-transition: all 1s ease;
+			-ms-transition: all 1s ease;
+			transition: all 1s ease;
+
+	
+    	}
+ #figcap01,#figcap02,#figcap03,#figcap04,#figcap05,#figcap06,#figcap07,#figcap08,#figcap09
+    	{
+	       opacity: 0;
+	       -webkit-transition: all 1s ease;
+			-moz-transition: all 1s ease;
+			-ms-transition: all 1s ease;
+			transition: all 1s ease;
+
+	
+    	}
+
+
+
+/*--------- 2 different styles----------*/
+ 
+.cs-style-2 figure img {
+    z-index: 0;
+    transition: transform 0.4s;    
+    
+    
+}
+ 
+.no-touch .cs-style-2 figure:hover img,
+.cs-style-2 figure.cs-hover img {
+    z-index:1;
+}
+
+.cs-style-2 figcaption {
+    height: 90px;
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    
+    
+}
+
+.cs-style-2 figcaption a {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+/* ============================================================
+  specific styles on index page
+============================================================ */	 
+	 #buttontop{
+		 margin-top: 20px;
+	 }
+	 
+	 #whoheading{
+	 	 margin-top: 10px;
+		 margin-bottom: 40px;
+	 }
+	 #textheading1,#textheading2,#textheading3,#textheading4{
+		 margin-top: 20px;
+	 }
+	 #title1,#title2,#title3,#title4{
+		 margin-bottom: 20px;
+	 }
+	 #content1{
+		 min-height:300px;
+	 }
+	 
+/* ============================================================
+  specific styles on who page
+============================================================ */	 
+	 #who1{
+		 width: 70%;
+		 margin-left: 15%;
+		 margin-right: 15%;
+		 font-family: 'Chalet-ParisNineteenSixty';
+		 height: 200px;
+		 vertical-align: middle;
+	 }
+	 
+	 #whocontent1{
+		 padding: 0;
+	 }
+	 
+	 .people{
+		    display: none;
+		    font-family: 'Chalet-ParisNineteenSixty';
+		    margin: 20px;
+		    padding:20px;
+     }
+     
+     #imgone, #imgtwo, #imgthree{
+	     text-align: center;
+	     margin-left: 25%;
+	     margin-right: 25%;
+	     width:50%;
+	     margin-bottom: 30px;
+     }
+	   
+	 #ranks{
+		 padding-top: 50px;
+	 }
+	 
+	 .names{
+		 color:#428BCA;
+		 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	 }
+
+/* ============================================================
+  specific styles on what page
+============================================================ */	 
+		#what1{
+			 width: 70%;
+			 margin-left: 15%;
+			 margin-right: 15%;
+			 font-family: 'Chalet-ParisNineteenSixty';
+			 vertical-align: middle;
+				 
+		}
+		
+		#vid{
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		#works{
+			font-family: 'Chalet-ParisNineteenSixty';
+		}
+
+/* ============================================================
+  LEAFLET MAP
+============================================================ */
+
+		#map { 
+				height: 400px; 
+				width: 100%;
+				margin-bottom: 20px;
+			
+		}
+
+/* ============================================================
+  FORM
+============================================================ */
+
+
+/* contact form 4 */
+
+
+#ajax-contact{
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	padding-bottom: 40px;
+}
+
+.field {
+  margin: 2em 0;
+}
+
+label {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  color: #999999;
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 0.5em 0.5em;
+  font-size: 1.2em;
+  border-radius: 3px;
+  border: 1px solid #D9D9D9;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 0.5em 0.5em;
+  font-size: 1.2em;
+  border-radius: 3px;
+  border: 1px solid #D9D9D9;
+}
+
+button {
+  display: inline-block;
+  border-radius: 3px;
+  border: none;
+  font-size: 16px;
+  padding: 0.5rem 0.8em;
+  background: #69c773;
+  border-bottom: 1px solid #498b50;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+button:hover, button:focus {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 1;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1) inset;
+}
+
+.success {
+  width: 450px;
+  padding: 20px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #468847;
+  font-size: 20px;
+/*   height:60px; */
+  background-color: #dff0d9;
+  border: 1px solid #d6e9c6;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.error {
+width: 450px;
+  padding: 20px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-align: center;
+    margin-left: auto;
+  margin-right: auto;
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+/* ============================================================
+  responsive text
+============================================================ */	 
+	 
+@media screen and (max-width: 992px) {
+				  p,.btn,input,div,span,h4 {
+				    font-size: 95%;
+				  }
+				  h1 {
+				    font-size: 24px;  
+				  }
+				  h2 {
+				    font-size: 22px;  
+				  }
+				  h3 {
+				    font-size: 18px;  
+				  }
+				  
+				  section.module h2 {
+				  	font-size:30px;
+				  }
+}
+
+@media screen and (max-width: 768px) {
+				  p,.btn,input,div,span,h4 {
+				    font-size: 90%;
+				  }
+				  h1 {
+				    font-size: 20px;  
+				  }
+				  h2 {
+				    font-size: 18px;  
+				  }
+				  h3 {
+				    font-size: 16px;  
+				  }
+				  
+				  section.module h2 {
+				  	font-size:20px;
+				  }
+}
